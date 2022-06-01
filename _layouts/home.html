@@ -9,12 +9,12 @@ layout: default
   {%- endif -%}
   -->
   
-  <img src="{{ site.url }}/assets/images/backgrounds/bg1.jpg">
+  <img src="{{ site.url }}/images/backgrounds/jpg/bg1.jpg">
   
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Past Events" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Events" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
