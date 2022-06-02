@@ -1,35 +1,48 @@
-<footer class="site-footer h-card">
+<!-- ======= Footer ======= -->
+<footer id="footer" class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>SHPE UNT</h3>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="/about">About</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="/membership">MemberSHPE</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Email:</strong> shpeunt@gmail.com<br>
+            </p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/shpeunt/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://twitter.com/shpeunt" target="_blank" rel="noopener noreferrer" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://discord.com/invite/Nhp2mAVNUN" target="_blank" rel="noopener noreferrer" class="discord"><i class="bi bi-discord"></i></a>
+              <a href="https://www.snapchat.com/add/untshpe?share_id=OkywFx-Q4gY&locale=en-US" target="_blank" rel="noopener noreferrer" class="snapchat"><i class="bi bi-snapchat"></i></a>
+              <a href="https://open.spotify.com/playlist/6jopdEMukkQTGCT50lw2ZR?si=5770f9991c9e4690" target="_blank" rel="noopener noreferrer" class="spotify"><i class="bi bi-spotify"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Sign up for our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-
-  </div>
-
+    <div class="container">
+      <div class="credits">
+        Designed by <a href="">SHPE UNT</a>
+      </div>
+    </div>
 </footer>
+<!-- End Footer -->
