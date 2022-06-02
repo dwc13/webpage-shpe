@@ -1,7 +1,8 @@
 ---
-layout: default
-title: Events
+layout: events 
+title: Event
 ---
 
 # Event Page
 
+Event content body here
