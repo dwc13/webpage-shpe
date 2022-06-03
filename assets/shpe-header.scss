@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Header 
+--------------------------------------------------------------*/
+.navbar {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+}
+.navbar .logo {
+  max-width: 25%;
+  padding: 0;
+}
+.navbar .nav-list, .navbar a, .navbar a:focus {
+  list-style: none;
+  color: #fff;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around
+}
+.navbar li {
+  padding: 0 20px 0 20px;
+  margin: auto;
+}
+.navbar .nav-list a:hover {
+  color: #18d26e;
+}
+
+.dropdown ul {
+  display: block;
+  position: absolute;
+  padding: 10px 0;
+  visibility: hidden;
+  background: #fff;
+  list-style: none;
+}
+.dropdown:hover ul {
+  list-style: none;
+  visibility: visible;
+  background: #888;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute; 
+  padding: 1px 1px;
+  background-color: #111;
+}
+.dropdown-content a {
+  display: flex;
+  padding: 5px 20px 5px 20px;
+  //border: 1px solid #18d26e;
+  justify-content: center;
+}
+.dropdown-content a:hover {
+  background-color: #555;
+}
