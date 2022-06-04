@@ -2,11 +2,63 @@
 	About Us
 --------------------------------*/
 #about {
-  background: url("../images/backgrounds/jpg/bg1.jpg") center top no-repeat fixed;
-  background-size: cover;
-  padding: 60px 0 40px 0;
+  // background: url("../images/backgrounds/jpg/bg1.jpg") center top no-repeat fixed;
+  // background-size: cover;
   position: relative;
 }
+
+.section {
+  overflow: hidden;
+}
+
+.section-header p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #333;
+}
+
+.section-header h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+// Creates a thin gray line below h3
+/*
+.section-header h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+*/
+
+// Creates a green line below h3 on top gray line
+/*
+.section-header h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #18d26e;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+*/
+
+
+
+
+
+
 #about::before {
   content: "";
   position: absolute;
@@ -83,16 +135,14 @@
 }
 
 .team-button {
-	background: black;
+	background: #00853E;
 	display: flex;
 	justify-content: center;
-	color: green;
 	width: 50%;
 	margin: auto;
 }
 .team-button a {
-	color: green;
-  margin: 1em 1em;
+  margin: 1rem;
 }
 .team-button:hover {
 	background: #333;

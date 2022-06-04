@@ -2,14 +2,15 @@
 ---
 
 @import "minima";
-@import "assets/shpe-header", "assets/shpe-footer";
-@import "assets/home.scss", "assets/team.scss", "assets/about.scss";
+
+@import "assets/shpe-header.scss", "assets/shpe-footer.scss";
+
+@import "assets/home.scss", "assets/about.scss";
+@import "assets/team.scss";
 
 
 // Below is unsure scss files for websites to be styled correctly
-@import "assets/sections";
 @import "assets/contacts";
-
 @import "assets/testimonials";
 @import "assets/hero";
 @import "assets/clients";
@@ -20,7 +21,6 @@
 @import "assets/facts";
 @import "assets/call2action";
 @import "assets/back2top";
-@import "assets/contacts";
 @import "assets/breadcrumbs";
 
 /*--------------------------------------------------------------
@@ -28,12 +28,11 @@
 --------------------------------------------------------------*/
 body {
   background: white;
-  color: #666666;
-  font-family: "Open Sans", sans-serif;
+	color: black;
 }
 
 a {
-  color: white;
+	color: black;
 }
 
 a:hover, a:active, a:focus {
@@ -43,61 +42,16 @@ a:hover, a:active, a:focus {
 }
 
 a:visited {
-	color: black
-}
-
-p {
-  padding: 0;
-  margin: 0 0 30px 0;
+	color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0 0 0.3em 0;
 }
 
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #18d26e;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.content { 
+	background: blue;
+	margin: 0 5em 0 5em;
+	// display: relative;
 }

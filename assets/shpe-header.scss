@@ -1,6 +1,78 @@
 /*--------------------------------------------------------------
 # Header 
 --------------------------------------------------------------*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+ background-color: black;
+ color: white;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 25px;
+}
+
+.navbar .logo {
+  max-width: 25%;
+	padding: 15px;
+}
+
+.nav-list {
+  list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+	padding: 10px 10px;
+}
+
+.nav-list .list-item:hover, .nav-list .list-item:hover a {
+	background-color: #333;
+	color: green;
+}
+
+.logo:hover {
+	background: #333;
+}
+
+.menu {
+	display: none;
+}
+
+.navbar ul li a {
+  color: white;
+}
+
+@media all and (max-width: 1000px) {
+	.navbar {
+		font-size: 0.8rem;
+	}
+}
+
+@media all and (max-width: 720px) {
+	.navbar {
+		flex-direction: column;
+	}
+	.nav-list {
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.nav-list .list-item {
+		display: block;
+		padding: 10px;
+		border-top: 1px solid white;
+	}
+	.navbar .logo {
+		max-width: 80%;
+	}
+}
 /*
 .dropdown ul {
   display: block;
@@ -38,60 +110,3 @@
   background-color: #555;
 }
 */
-* {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-.navbar {
- background-color: black;
- color: white;
- display: flex;
- justify-content: space-around;
- align-items: center;
- font-size: 15px;
-}
-.navbar .logo {
-  max-width: 25%;
-	padding: 15px;
-}
-.nav-list {
-  list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-.nav-list .list-item {
-  display: inline-block;
-	padding: 10px 10px;
-}
-.nav-list .list-item:hover, .nav-list .list-item:hover a {
-	background-color: #333;
-	color: green;
-}
-.logo:hover {
-	background: #333;
-}
-.menu {
-	display: none;
-}
-.navbar ul li a {
-  color: white;
-}
-@media all and (max-width: 600px) {
-	.navbar {
-		flex-direction: column;
-	}
-	.nav-list {
-		width: 100%;
-		text-align: center;
-		padding-top: 10px;
-	}
-	.nav-list .list-item {
-		display: block;
-		padding: 10px;
-		border-top: 1px solid white;
-	}
-	.navbar .logo {
-		max-width: 80%;
-	}
-}
