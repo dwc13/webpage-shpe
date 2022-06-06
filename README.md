@@ -25,6 +25,9 @@ There are many steps to take but here are them in order;
   - Type in: _localhost:4000_
 - Edit the **HTML** and CSS** files to your liking
 
+#### What is the UNT Green value you are using?
+We are using the value #00853e.
+
 ## Contributors
 
 - [@Dominic Carrillo](https://github.com/dwc13)

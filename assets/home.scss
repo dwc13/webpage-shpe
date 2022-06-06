@@ -1,12 +1,66 @@
 /*------------------------------
 	Home
 --------------------------------*/
-.wrapper {
-  max-width: calc(1200px - (30px * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 10px 30px 10px;
+.home-welcome {
+	position: relative;
+	display: grid;
+	align-content: center;
+	
+	width: 100%;
+	height: 750px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	animation: slide 50s infinite;
+}	
+
+.welcome {
+	margin: 0;
+	position: inherit;
+  background: rgba(0,0,0,0.8);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  font-size: 5rem;
+  font-weight: 700;
+	text-align: center;
+	color: #00853e;
 }
+
 .home-event {
   padding: 30px 0 0 0;
+}
+
+@media all and (max-width: 1000px) {
+	.home-welcome {
+		height: 500px;
+	}
+	.welcome {
+		font-size: 3rem;
+		font-weight: 850;
+	}
+}
+
+@media all and (max-width:455px) {
+	.home-welcome {
+		height: 200px;
+	}
+	.welcome {
+		font-size: 1.2rem;
+		font-weight: 1000;
+	}
+}
+
+@keyframes slide {
+	0%{ background-image: url('/images/backgrounds/jpg/bg1.jpg'); }
+	20%{ background-image: url('/images/backgrounds/jpg/bg1.jpg'); }
+	20.01%{ background-image: url('/images/backgrounds/jpg/bg2.jpg'); }
+	40%{ background-image: url('/images/backgrounds/jpg/bg2.jpg'); }
+	40.01%{ background-image: url('/images/backgrounds/jpg/bg3.jpg'); }
+	60%{ background-image: url('/images/backgrounds/jpg/bg3.jpg'); }
+	60.01%{ background-image: url('/images/backgrounds/jpg/bg4.jpg'); }
+	80%{ background-image: url('/images/backgrounds/jpg/bg4.jpg'); }
+	80.01%{ background-image: url('/images/backgrounds/jpg/bg5.jpg'); }
+	100%{ background-image: url('/images/backgrounds/jpg/bg5.jpg'); }
 }
