@@ -5,7 +5,8 @@
 
 @import "assets/shpe-header.scss", "assets/shpe-footer.scss";
 
-@import "assets/home.scss", "assets/about.scss";
+@import "assets/home.scss";
+@import "assets/about.scss";
 @import "assets/team.scss";
 
 
@@ -51,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content { 
-	background: blue;
+	// background: blue;
 	margin: 0 5em 0 5em;
 	// display: relative;
 }
