@@ -123,6 +123,9 @@
 	.section-header h3:after{
 		height: 5px;
 	}
+	.about-block .block-text {
+		padding: 0;
+	}
 	.about-block .block-icon {
 		left: calc(50% - 50px);
 		margin: 10px 0 0 0;
@@ -130,6 +133,10 @@
 	.about-block img {
 		max-width: 500px;
 		max-height: 266px;
+	}
+	.about-block p {
+		padding: 0;
+		padding-bottom: 15px;
 	}
 	.team-button {
 		width: 65%;
