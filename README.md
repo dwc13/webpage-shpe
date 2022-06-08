@@ -17,7 +17,7 @@ There are many steps to take but here are them in order;
 - Fork this repository
 - `$ git clone git@github.com/<your-repo>`
 - `$ cd <your-repo>`
-- (Optional to run on Local Machine) Install [Jekyll]()
+- (Optional to run on Local Machine) Install [Jekyll](https://jekyllrb.com/)
   
   - `$ bundle install`
   - `$ bundle exec jekyll serve --livereload`
