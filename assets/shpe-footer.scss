@@ -9,7 +9,7 @@
   background: #000;
   color: white;
 	border-top: none; 
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	padding: 0;
 	margin: 0;
@@ -23,22 +23,23 @@
 }
 .footer-info h3 {
 	margin: 0;
-  font-size: 4.5em;
+  font-size: 3.5em;
+	line-height: 1;
 	color: #00853E;
   font-weight: 700;
   letter-spacing: 3px;
 }
 .contact h4 {
-	font-size: 2.5em;
+	font-size: 2em;
 	margin: 0;
 }
 .contact p {
-	font-size: 1.5em;
+	font-size: 1em;
 	margin: 0 0 5px 0;
 }
 .social-links {
 	margin: 0.5em;
-	font-size: 2em;
+	font-size: 1.6em;
 }
 .social-links a,
 .social-links a:visited {
@@ -49,31 +50,31 @@
 	color: black;
 }
 .social-links a i {
-	font-size: 35px;
+	font-size: 25px;
 }
 .social-links a:hover {
 	color: white;
 }
 .newsletter {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .newsletter h4 {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0 0 5px 0;
 }
 .newletter form {
 	display: inline-flex;
 }
 .newsletter input[type=email] {
-  padding: 1rem;
+  padding: 0.5rem;
 	width: 550px;
 	font-size: 1rem;
 }
 .newsletter input[type=submit] {
   background: #00853e;
-	font-size: 1rem;
+	font-size: 0.5rem;
   border: 0;
-	padding: 1rem;
+	padding: 0.8rem;
   color: white;
   transition: 0.3s;
   cursor: pointer;
@@ -86,10 +87,10 @@
 
 @media (max-width:900px) {
 	.footer-info h3 { font-size: 3em; }
-	.contact { margin: 0 0 25px 0; }
+	.contact { margin: 0; }
 	.contact h4 { font-size: 1.7em; }
 	.contact p { font-size: 1em; }
-	.social-links { font-size: 1em; }
+	.social-links { font-size: 1.2em; }
 	.social-links a, .social-links a:visited { margin: 0 8px; }
 	.social-links a i { font-size: 18px; }
 	.newsletter h4 { font-size: 1.4em; }
