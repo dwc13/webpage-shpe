@@ -17,13 +17,15 @@ There are many steps to take but here are them in order;
 - Fork this repository
 - `$ git clone git@github.com/<your-repo>`
 - `$ cd <your-repo>`
-- (Optional to run on Local Machine) Install [Jekyll]()
+- (Optional to run on Local Machine) Install [Jekyll](http://jekyllrb.com/)
   
   - `$ bundle install`
   - `$ bundle exec jekyll serve --livereload`
   - Go to your browser of choice
   - Type in: _localhost:4000_
-- Edit the **HTML** and CSS** files to your liking
+- Edit the **HTML** and **CSS** files to your liking
+- Then host your repository on your choice of webservice e.g. Github Pages, Apache, or Nginx
+- Done! Now create new **Markdown** files for your posts using the post front matter layout
 
 #### What is the UNT Green value you are using?
 We are using the value #00853e.
